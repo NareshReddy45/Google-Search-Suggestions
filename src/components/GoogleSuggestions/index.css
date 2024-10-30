@@ -1,0 +1,87 @@
+.bg-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  height: auto;
+  max-width: 30%;
+  margin-bottom: 20px;
+}
+
+/* New container to wrap input and suggestions for boxed look */
+.search-box {
+  width: 50%;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-ele {
+  width: 100%;
+  height: 50px;
+  padding: 10px 10px 10px 45px; /* Space for search icon */
+  border-radius: 10px;
+  border: 1px solid #bfbfbf;
+  font-size: 20px;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  height: 24px;
+  width: 24px;
+  pointer-events: none;
+}
+
+.suggestions-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.suggestion-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.suggestion-text {
+  font-size: 18px;
+  color: #333;
+}
+
+.arrow-icon {
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+}
+
+/* Remove border-bottom for the last suggestion item */
+.suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.remove-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+}
